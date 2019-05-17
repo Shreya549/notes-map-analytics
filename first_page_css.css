@@ -1,0 +1,75 @@
+*{
+    max-width: 100%;
+}
+.logo{
+    height: 150%;
+    width: 100px;
+}
+.navbar .navbar-brand{
+    color: #fff;
+    font-size: 300%;
+    margin-left: 30%;
+    transition: 0.2s;
+}
+
+.navbar .navbar-brand:hover{
+    color:rgb(51, 155, 187);
+}
+
+.container{
+    position: relative;
+    bottom:100%;
+    margin:15% 10% 0 10%;
+    /* margin-top: 20%; */
+}
+
+.container div{
+    text-align: center;
+    font-size: 200%;
+}
+
+.container div a{
+    padding: 2%;
+    border: 3px solid #000;
+    border-radius: 15px;
+    text-decoration: none;
+}
+table{
+    align-content: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 75px;
+    transition: 0.5s;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
