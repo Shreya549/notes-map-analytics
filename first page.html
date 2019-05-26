@@ -32,12 +32,16 @@
         <form method="post" action = "php.php">
             <div class="form-group">
                 <label for="InputEmail">Email address</label>
-                <input type="email" class="form-control" required id="InputEmail" name ="user" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <input type="email" class="form-control" required id="InputEmail" name ="user" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="InputId">User Id</label>
+              <input type="password" class="form-control" name="userid" required id="InputId" placeholder="User Id">
             </div>
             <div class="form-group">
                 <label for="InputPassword">Password</label>
-                <input type="password" class="form-control" name="pass" required id="InputPassword" placeholder="Password">
+                <input type="password" class="form-control" name="pass" required id="InputPassword" aria-describedby="idHelp" placeholder="Password">
+                <small id="idHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <button type = "submit" class="btn btn-primary">Submit</button>
         </form>
