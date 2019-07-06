@@ -28,7 +28,7 @@
                       </ul>
                     </div>
 </nav>
-<form action="5c)pg.php">
+<form action="5c)pg.php" method = get>
   <select name="sort">
     <option value="date">Date</option>
     <option value="alpha">Alphabetical Order</option>
@@ -38,10 +38,10 @@
 </form>
 <table align =center border=1 cellpadding=10>
     <thead>
-        <td width = 3%> </td>
         <td width = 15%> Date </td>
-        <td width = 20%%> Event Name </td>
+        <td width = 20%> Event Name </td>
         <td width = 50%> Description </td>
+        <td width = 10%> </td>
 </thead>
         <tbody>
 <?php
@@ -64,23 +64,21 @@ if ($result->num_rows > 0) {
         $nam = $row["event_name"];
         $des = $row["description_event"];
         echo "<tr>";
-        echo '<form method="post"><td><input type="checkbox" value='.$nam.' name = '.$nam.'></td></form>';
+        echo '<form method="post" action = "5b)pg.php">';
         echo '<td>'.$dat.'</td>' ;
         echo '<td>'.$nam.'</td>' ;
         echo '<td>'.$des.'</td>' ;
+        echo '<td>';
+        echo '<div class="controls" class="container"><button type="submit" class="btn btn-primary">Remove</button><br></div>';
+        echo '</td>';
+        echo '</form>';
         echo '</tr>';
     }
 }
 ?>
+<br>
 </tbody>
 </table>
-<br>
-<div class="controls" class="container">
-    <form method="post" action = "5b)pg.php">
-    <button type="submit" class="btn btn-primary">Remove</button>
-    </form>
-    <br>
-</div>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class=container>
     <form method=get action="5a)pg.php">
