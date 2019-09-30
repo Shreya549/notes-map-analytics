@@ -1,1 +1,1 @@
-## Seamless note taking
+## Seamless Note taking
